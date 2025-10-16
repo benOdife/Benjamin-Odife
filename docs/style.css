@@ -1,10 +1,14 @@
 body {
 
     /*background:papayaWhip*/
-    background: LightSteelBlue;
+    background:#8C271E;
+    color:white;
     font-family: Comic-sans, Arial, Helvetica, sans-serif;
 }
+figure {background: #CFCBCA;
 
+    
+}
 div.side-by-side {
     display: flex;
 }
