@@ -1,50 +1,124 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html lang="en">
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>gallery fun stuff </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Gallery Fun Stuff</title>
+        <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url('tokyo.jpeg') no-repeat center center fixed;
+        background-size: cover;
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+      }
+
+      h1, figcaption, footer, nav a {
+        text-shadow: -2px -2px 0 #000,
+                      2px -2px 0 #000,
+                     -2px  2px 0 #000,
+                      2px  2px 0 #000;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 12px 30px;
+        margin: 1.5rem auto 2rem auto;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        backdrop-filter: blur(6px);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ff0000;
+      }
+
+      .side-by-side {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding: 2rem;
+      }
+
+      figure {
+        text-align: center;
+        max-width: 260px;
+      }
+
+      img {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(255, 255, 255, 0.3);
+      }
+
+      figcaption {
+        margin-top: 0.5rem;
+        font-style: italic;
+        font-size: 1rem;
+      }
+
+      footer {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 15px 25px;
+        width: fit-content;
+        margin: 2rem auto;
+        font-weight: 600;
+      }
+    </style>
     </head>
+    
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
         <h1>Gallery</h1>
+        
         <nav>
-            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a> | <a href="digit100essay.html">digit100 essay</a>     
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="digit100essay.html">Digit100 Essay</a>
         </nav>
-       <figure> <video width="700" controls="">
-            <source src="images/WIN_20220323_11_40_25_Pro.mp4"></source>
-            
-        </video>
-           <figcaption>school day 12:56</figcaption>
-        </figure>
         
         <div class="side-by-side">
             <figure>
-                <img src="images/cockatoo.jpg" alt="cool looking bird"/>
-                <figcaption>bird that has cool hair </figcaption>
+                <img src="images/meandmyboy" alt="humanities class" />
+                <figcaption> me and my friend not paying attetion in class </figcaption>
             </figure>
             <figure>
-                <img src="images/WIN_20230918_13_22_39_Pro.jpg" alt="photo of me in highschool"/>
-                <figcaption>junior year of highschool physics class</figcaption>
+                <img src="images/WIN_20230918_13_22_39_Pro.jpg" alt="photo of me in highschool" />
+                <figcaption>Junior year of high school physics class</figcaption>
             </figure>
-           
         </div>
-        <footer class="featureBlock">
-            <p>Shout out to the w3c community, and the developers of markup languages, and the oXygen XML editor!</p>
-            <p>We are . . . Digit at Penn State Behrend!</p>
-        </footer>
+        
+       
     </body>
 </html>

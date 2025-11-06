@@ -1,61 +1,95 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html lang="en">
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>ben did it </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Home</title>
+        <style>
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: 'Inter', sans-serif;
+        color: #fff;
+        line-height: 1.7;
+        background: url('onepiece2.png') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      * {
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000,
+                     1px -1px 0 #000,
+                    -1px  1px 0 #000,
+                     1px  1px 0 #000;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        margin: 1rem auto 2rem auto;
+        backdrop-filter: blur(6px);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: 700;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ff0000;
+      }
+
+      p {
+        max-width: 800px;
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        width: fit-content;
+        margin: 2rem auto;
+        font-weight: 600;
+      }
+    </style>
     </head>
+    
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Beginning HTML</h1>
-        <nav>
-            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a> | <a href="digit100essay.html">digit100 essay</a>     
-        </nav>
-        <h2>subheading</h2>
-        <p>Here is an example of a <a href="about.html">relative link</a> to a page inside the same folder.</p>
-        <p>Here is some sample HTML to look at. This is a body paragraph with some
-                <strong>inline</strong> code to feature some text. Here is <a
-                href="https://behrend.psu.edu/penn-state-behrend">a link to an external
-            website</a>.</p>
-        <p>One of the best resources for learning HTML is <a href="https://www.w3schools.com/html/default.asp">w3Schools</a>. 
-            Here is a reference for <a href="https://htmlcolorcodes.com/">color codes you can use for styling</a>.</p>
-        <p>Each p element is a <strong>block</strong> element designed to make a block on the
-            page.</p>
-        <h2>What are block elements good for?</h2>
-        <p>The next element after this is a ul, or <q>unordered list</q>. It makes a bulleted list.</p>
-        <ul>
-            <li>fortnite</li>
-            <li>paragraphs</li>
-            <li>lists</li>
-            <li>tables</li>
-            <li>images</li>
-        </ul>
+        <h1>Welcome to My Website</h1>
         
-        <p>How about we look at an ol element, or <q>ordered</q> list? The code looks very similar to the <q>unordered</q> list. 
-            You have to see the difference by viewing in a web browser.</p>
-        <ol>
-            <li>morning</li>
-            <li>noon</li>
-            <li>afternoon</li>
-            <li>evening</li>
-            <li>night</li>
-        </ol>
-        <figure>
-            <img src="images/lebron.png"/>
-            <figcaption>drafted in 2003 <a href="https://www.lebronjames.com">lebronjames.com</a></figcaption>
-        </figure> 
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="digit100essay.html">Digit100 Essay</a>
+        </nav>
+        
+        <p>
+            Welcome to my personal site — a space where I share my projects, thoughts, and a little bit of my creative side.  
+            From anime inspiration to digital art and tech, this site represents my style and what I enjoy building.
+        </p>
+        <img src="draingange" alt="favorite group " />
+       
     </body>
 </html>

@@ -1,50 +1,99 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html lang="en">
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>gallery fun stuff </title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-        <link rel="stylesheet" type="text/css" href="style.css" />
+        <title>Digit 100 Essay</title>
+        <style>
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+        background: url('aot.jpg') no-repeat center center fixed;
+        background-size: cover;
+      }
+
+      * {
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000,
+                     1px -1px 0 #000,
+                    -1px  1px 0 #000,
+                     1px  1px 0 #000;
+      }
+
+      h1 {
+        text-align: center;
+        margin-top: 2rem;
+        font-size: 2.5rem;
+      }
+
+      nav {
+        display: inline-block;
+        background: rgba(0, 0, 0, 0.6);
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 10px 25px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+        margin: 1rem auto 2rem auto;
+        backdrop-filter: blur(6px);
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 12px;
+        font-weight: 700;
+        transition: color 0.3s ease;
+      }
+
+      nav a:hover {
+        color: #ff0000;
+      }
+
+      p {
+        max-width: 900px;
+        margin: 2rem auto;
+        text-align: center;
+        font-size: 1.1rem;
+      }
+
+      footer {
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        border: 2px solid #fff;
+        border-radius: 10px;
+        padding: 1rem;
+        width: fit-content;
+        margin: 2rem auto;
+        font-weight: 600;
+      }
+    </style>
     </head>
+    
     <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>Gallery</h1>
-        <nav>
-            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a> | <a href="digit100essay.html">digit100 essay</a>     
-        </nav>
-       <figure> <video width="700" controls="">
-            <source src="images/WIN_20220323_11_40_25_Pro.mp4"></source>
-            
-        </video>
-           <figcaption>school day 12:56</figcaption>
-        </figure>
+        <h1>Digit 100 Essay</h1>
         
-        <div class="side-by-side">
-            <figure>
-                <img src="images/cockatoo.jpg" alt="cool looking bird"/>
-                <figcaption>bird that has cool hair </figcaption>
-            </figure>
-            <figure>
-                <img src="images/WIN_20230918_13_22_39_Pro.jpg" alt="photo of me in highschool"/>
-                <figcaption>junior year of highschool physics class</figcaption>
-            </figure>
-           
-        </div>
-        <footer class="featureBlock">
-            <p>Shout out to the w3c community, and the developers of markup languages, and the oXygen XML editor!</p>
-            <p>We are . . . Digit at Penn State Behrend!</p>
-        </footer>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="digit100essay.html">Digit100 Essay</a>
+        </nav>
+        
+        <p>
+            When I created a website using HTML and CSS, one of the best parts was my ability to be in control of everything. 
+            I could decide how the text, pictures, and links would look on the web page and where they would get styled. 
+            It was even fun to be able to add images of me, and the fact that I could place them just how I wanted and 
+            even put captions under the images made it even more enjoyable. I found it very cool that my website ended 
+            up looking how I wanted it. On the other hand, it took a lot of time to write all the code and ensure all the 
+            links, photos, and text were working correctly. Sometimes it would take me a while to figure out why something 
+            wasn't working, and I would be a little upset when I would make mistakes.
+        </p>
+        
+       
     </body>
 </html>

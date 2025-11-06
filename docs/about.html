@@ -1,52 +1,137 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-    <!-- Try opening this file on your local computer in a web browser (Firefox, Chrome, etc). 
-     * On Windows, go to the browser and type control + o and browse to find this file to open it.
-     * On Mac, go to the browser and type command + o and browse to find this file to open it. 
-     Look for the text in the <title> element in the tab above the browser search bar. Do you see it? 
-    -->
+<html lang="en">
     <head>
-        <!-- What's in the <head> element is a "meta" area not for display. 
-            It holds important information about the website's contents.
-            The text inside the <title> element does show in the top tab of a web browser. 
-             The <head> is where we will include info about styling the site, too. -->
-        <title>My resume</title>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="style.css" />
-        <!-- Here is a place where we can add a little styling code called CSS to this page. 
-            I used it to apply a background color to the body element.
-        -->
-       
-    </head>
-    <body>
-        <!-- CONTENT FOR DISPLAY. The <body> element holds the content we see in the display window on the web browser.-->
-        <h1>resume Ben o </h1>
-        <nav>
-            <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="gallery.html">Gallery</a> | <a href="digit100essay.html">digit100 essay</a>     
-        </nav>
-        <h2>Education</h2>
-        <ol>
-            <li>Penn State Erie, The Berhend College, 2025- , graduation anticipated 2027 </li>
-            <li>Alexandria City Highschool , Alexandria city,VA 2024-2025 </li>
-            <li>Lake Mary Prep , Fl 2020-2024</li>
-        </ol>
-        <h3>Jobs and hobbies </h3>
-        <ul>
-            <li>Hosa </li><li>MMA</li><li>i worked construction for a little </li><li>anime(One Piece</li>
-        </ul>
-        <h4>varia lab work 3d scan </h4>
-        <iframe width="" height="360" data-original-width="640" data-original-height="360" src="https://www.thinglink.com/view/scene/2024887076524130981"  style="border: none;" allowfullscreen=""></iframe><script src="//cdn.thinglink.me/jse/responsive.js"></script>
-        <h5>My Music I Listen To</h5>
+        <title>About Me</title>
+        <style>
+      body {
+        margin: 0;
+        padding: 2rem;
+        font-family: 'Inter', sans-serif;
+        color: #ffffff;
+        line-height: 1.7;
+        text-align: left;
+        background: url('baki2.png') no-repeat center center fixed;
+        background-size: cover;
+      }
 
+      /* White text with manga-style outline */
+      * {
+        color: #ffffff;
+        text-shadow: -1px -1px 0 #000,
+                     1px -1px 0 #000,
+                    -1px  1px 0 #000,
+                     1px  1px 0 #000;
+      }
+
+      h1, h2, h3, h4 {
+        text-align: center;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      ol, ul {
+        margin-left: 2rem;
+      }
+
+      ul li, ol li {
+        margin-bottom: 0.5rem;
+      }
+
+      /* Centered futuristic nav bar UNDER heading */
+      nav {
+        display: block;
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid #fff;
+        border-radius: 12px;
+        padding: 12px 30px;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(8px);
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto 2rem auto; /* centers under heading */
+      }
+
+      nav a {
+        color: #ffffff;
+        text-decoration: none;
+        margin: 0 15px;
+        font-weight: 700;
+        transition: color 0.3s ease, text-shadow 0.3s ease;
+      }
+
+      /* 🔴 Red hover glow effect */
+      nav a:hover {
+        color: #ff0000;
+        text-shadow: 0 0 8px #ff0000, 0 0 15px #ff4444;
+      }
+
+      iframe {
+        display: block;
+        max-width: 100%;
+        margin: 2rem auto;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      }
+
+      footer {
+        text-align: center;
+        margin-top: 3rem;
+        padding: 1rem;
+        border-top: 2px solid rgba(255,255,255,0.8);
+        background-color: rgba(0,0,0,0.6);
+        border-radius: 10px;
+        width: fit-content;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 600;
+      }
+    </style>
+    </head>
+    
+    <body>
+        <h1>About Me</h1>
         
-        <p>
-            Drain Gang and Yung Lean changed the rap game with their dreamy, emotional sound and futuristic vibe.  
-            Yung Lean’s early music even inspired artists like Travis Scott, shaping how modern rap sounds today.  
-            They’re my favorite artists to listen to — nothing feels quite like their world.
-        </p>
-        <figure>
-            <img src="images/DG.webp"/>
-        </figure>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="digit100essay.html">Digit100 Essay</a>
+        </nav>
+        
+        <section>
+            <h2>Education</h2>
+            <ol>
+                <li>Penn State Erie, The Behrend College, 2025– , graduation anticipated 2027</li>
+                <li>Alexandria City High School, Alexandria, VA, 2024–2025</li>
+                <li>Lake Mary Prep, FL, 2020–2024</li>
+            </ol>
+            
+            <h3>Jobs and Hobbies</h3>
+            <ul>
+                <li>HOSA</li>
+                <li>MMA</li>
+                <li>Construction work (briefly)</li>
+                <li>Anime (One Piece)</li>
+            </ul>
+            
+            <h3>Personal Info</h3>
+            <p>I have 3 tattoos that are meaningful to me. I’m the youngest in my family and have an older sister who goes to Case Western.</p>
+            
+            <h4>My Work From The Varia Lab</h4>
+            <iframe width="640" height="360" 
+                src="https://www.thinglink.com/view/scene/2024887076524130981"
+                allowfullscreen></iframe>
+            <script src="//cdn.thinglink.me/jse/responsive.js"></script>
+        </section>
+        
+        
     </body>
 </html>
+
