@@ -1,0 +1,400 @@
+{
+  "stats": {
+    "text_a_path": "/mnt/data/fic_1817_8550.txt",
+    "text_b_path": "/mnt/data/fic_1827_8950.txt",
+    "tokens_a": 14610,
+    "tokens_b": 11099,
+    "types_a": 2471,
+    "types_b": 2421
+  },
+  "top_unigrams_A": [
+    [
+      "the",
+      606
+    ],
+    [
+      "to",
+      347
+    ],
+    [
+      "you",
+      296
+    ],
+    [
+      "and",
+      269
+    ],
+    [
+      "of",
+      243
+    ],
+    [
+      "count",
+      243
+    ],
+    [
+      "my",
+      216
+    ],
+    [
+      "carlos",
+      204
+    ],
+    [
+      "pacomo",
+      186
+    ],
+    [
+      "almeyda",
+      179
+    ],
+    [
+      "is",
+      170
+    ],
+    [
+      "in",
+      164
+    ]
+  ],
+  "top_unigrams_B": [
+    [
+      "the",
+      658
+    ],
+    [
+      "of",
+      328
+    ],
+    [
+      "and",
+      277
+    ],
+    [
+      "to",
+      252
+    ],
+    [
+      "you",
+      168
+    ],
+    [
+      "in",
+      129
+    ],
+    [
+      "my",
+      123
+    ],
+    [
+      "odo",
+      121
+    ],
+    [
+      "tancred",
+      118
+    ],
+    [
+      "is",
+      110
+    ],
+    [
+      "that",
+      110
+    ],
+    [
+      "his",
+      105
+    ]
+  ],
+  "top_bigrams_A": [
+    [
+      "car carlos",
+      158
+    ],
+    [
+      "count almeyda",
+      152
+    ],
+    [
+      "alm count",
+      144
+    ],
+    [
+      "pac pacomo",
+      124
+    ],
+    [
+      "eug eugenia",
+      88
+    ],
+    [
+      "count arandez",
+      59
+    ],
+    [
+      "bea beatrice",
+      58
+    ],
+    [
+      "ar count",
+      52
+    ],
+    [
+      "to the",
+      48
+    ],
+    [
+      "of the",
+      46
+    ],
+    [
+      "gus gusman",
+      40
+    ],
+    [
+      "in the",
+      34
+    ]
+  ],
+  "top_bigrams_B": [
+    [
+      "of the",
+      60
+    ],
+    [
+      "odo odo",
+      49
+    ],
+    [
+      "tan tancred",
+      48
+    ],
+    [
+      "in the",
+      42
+    ],
+    [
+      "the sultan",
+      39
+    ],
+    [
+      "i have",
+      30
+    ],
+    [
+      "alex alexius",
+      30
+    ],
+    [
+      "to the",
+      26
+    ],
+    [
+      "god godfrey",
+      25
+    ],
+    [
+      "kilidge arslan",
+      24
+    ],
+    [
+      "on the",
+      23
+    ],
+    [
+      "of a",
+      21
+    ]
+  ],
+  "top_trigrams_A": [
+    [
+      "alm count almeyda",
+      143
+    ],
+    [
+      "ar count arandez",
+      50
+    ],
+    [
+      "count almeyda i",
+      18
+    ],
+    [
+      "' t is",
+      17
+    ],
+    [
+      "sir car carlos",
+      15
+    ],
+    [
+      "pac pacomo yes",
+      15
+    ],
+    [
+      "car carlos you",
+      13
+    ],
+    [
+      "car carlos but",
+      12
+    ],
+    [
+      "pacomo yes sir",
+      11
+    ],
+    [
+      "pac pacomo aside",
+      11
+    ],
+    [
+      "car carlos what",
+      10
+    ],
+    [
+      "count almeyda aside",
+      9
+    ]
+  ],
+  "top_trigrams_B": [
+    [
+      "kil kilidge arslan",
+      17
+    ],
+    [
+      "' t is",
+      13
+    ],
+    [
+      "count of thoulouse",
+      12
+    ],
+    [
+      "raymond count of",
+      8
+    ],
+    [
+      "tan tancred i",
+      7
+    ],
+    [
+      "the walls of",
+      6
+    ],
+    [
+      "the sultan kilidge",
+      6
+    ],
+    [
+      "i pray you",
+      6
+    ],
+    [
+      "tan tancred lady",
+      6
+    ],
+    [
+      "i do not",
+      6
+    ],
+    [
+      "i will not",
+      6
+    ],
+    [
+      "tancred of tarento",
+      6
+    ]
+  ],
+  "distinct_A": [
+    [
+      "count",
+      14.9205775979596
+    ],
+    [
+      "carlos",
+      13.963039014373717
+    ],
+    [
+      "pacomo",
+      12.73100616016427
+    ],
+    [
+      "almeyda",
+      12.251882272416152
+    ],
+    [
+      "car",
+      10.792858671804423
+    ],
+    [
+      "eugenia",
+      10.266940451745379
+    ],
+    [
+      "alm",
+      9.99315537303217
+    ],
+    [
+      "pac",
+      8.555783709787816
+    ]
+  ],
+  "distinct_B": [
+    [
+      "the",
+      17.806180811005966
+    ],
+    [
+      "of",
+      12.919768379155457
+    ],
+    [
+      "odo",
+      10.901883052527255
+    ],
+    [
+      "tancred",
+      10.631588431390217
+    ],
+    [
+      "and",
+      6.5451568081899225
+    ],
+    [
+      "sultan",
+      4.504910352283989
+    ],
+    [
+      "tan",
+      4.41481214523831
+    ],
+    [
+      "spy",
+      4.23461573114695
+    ]
+  ],
+  "plot_terms": [
+    "the",
+    "count"
+  ],
+  "generated_files": {
+    "uni_a_csv": "/mnt/data/corpus_outputs/top_unigrams_textA.csv",
+    "uni_b_csv": "/mnt/data/corpus_outputs/top_unigrams_textB.csv",
+    "bi_a_csv": "/mnt/data/corpus_outputs/top_bigrams_textA.csv",
+    "bi_b_csv": "/mnt/data/corpus_outputs/top_bigrams_textB.csv",
+    "tri_a_csv": "/mnt/data/corpus_outputs/top_trigrams_textA.csv",
+    "tri_b_csv": "/mnt/data/corpus_outputs/top_trigrams_textB.csv",
+    "dispersion_images": [
+      "/mnt/data/corpus_outputs/dispersion_A_1.png",
+      "/mnt/data/corpus_outputs/dispersion_A_2.png",
+      "/mnt/data/corpus_outputs/dispersion_B_1.png",
+      "/mnt/data/corpus_outputs/dispersion_B_2.png"
+    ],
+    "bar_unigrams": [
+      "/mnt/data/corpus_outputs/top_unigrams_A.png",
+      "/mnt/data/corpus_outputs/top_unigrams_B.png"
+    ]
+  }
+}
