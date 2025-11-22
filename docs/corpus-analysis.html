@@ -1,151 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Corpus Analysis — Simple</title>
-  <style>
-    body { font-family: Arial, Helvetica, sans-serif; max-width:900px; margin:20px auto; line-height:1.5; }
-    h1 { font-size:1.6rem; }
-    img { max-width:100%; border:1px solid #ddd; }
-    figure { margin:16px 0; }
-    figcaption { font-size:0.9rem; color:#333; background:#f7f7f7; padding:6px; border-radius:6px; }
-    pre { background:#f3f3f3; padding:10px; overflow:auto; }
-    .small { font-size:0.9rem; color:#555; }
-  </style>
-</head>
-<body>
-  <h1>Corpus Analysis — Simple</h1>
-  <p class="small">Files used (local paths):</p>
-  <ul>
-    <li>Text A: /mnt/data/fic_1817_8550.txt</li>
-    <li>Text B: /mnt/data/fic_1827_8950.txt</li>
-  </ul>
-
-  <h2>Quick stats</h2>
-  <p class="small">Tokens — Text A: 14,610; Text B: 11,099.</p>
-  <p class="small">Types — Text A: 2,471; Text B: 2,421.</p>
-
-  <h2>Top unigrams (Text A)</h2>
-  <figure>
-    <img src="corpus_outputs/top_unigrams_A.png" alt="Top unigrams Text A">
-    <figcaption>Top unigrams from Text A (top 15). See CSV: <a href="corpus_outputs/top_unigrams_textA.csv">top_unigrams_textA.csv</a></figcaption>
-  </figure>
-
-  <h2>Top unigrams (Text B)</h2>
-  <figure>
-    <img src="corpus_outputs/top_unigrams_B.png" alt="Top unigrams Text B">
-    <figcaption>Top unigrams from Text B (top 15). See CSV: <a href="corpus_outputs/top_unigrams_textB.csv">top_unigrams_textB.csv</a></figcaption>
-  </figure>
-
-  <h2>Top bigrams & trigrams</h2>
-  <p class="small">See CSV files for full lists:</p>
-  <ul>
-    <li><a href="corpus_outputs/top_bigrams_textA.csv">Top bigrams — Text A</a></li>
-    <li><a href="corpus_outputs/top_bigrams_textB.csv">Top bigrams — Text B</a></li>
-    <li><a href="corpus_outputs/top_trigrams_textA.csv">Top trigrams — Text A</a></li>
-    <li><a href="corpus_outputs/top_trigrams_textB.csv">Top trigrams — Text B</a></li>
-  </ul>
-
-  <h2>Distinctive words (keywordness)</h2>
-  <p class="small">Words more characteristic of Text A (top): count, carlos, pacomo, almeyda, car, eugenia</p>
-  <p class="small">Words more characteristic of Text B (top): the, of, odo, tancred, and, sultan</p>
-  <p class="small">Detailed CSVs: <a href="corpus_outputs/distinct_textA.csv">distinct_textA.csv</a>, <a href="corpus_outputs/distinct_textB.csv">distinct_textB.csv</a></p>
-
-  <h2>Concordance (KWIC) samples</h2>
-<h3>KWIC — A:count</h3>
-<pre>
-... the ground work of this little comedy dramatis person philadelphia [count] almeyda mr robertson count arandez warren carlos wood pacomo jefferson ...
-... this little comedy dramatis person philadelphia count almeyda mr robertson [count] arandez warren carlos wood pacomo jefferson gusman abercrombie pedrillo durang ...
-... men at arms pages servants scene at the castle of [count] almeyda in catalonia during the thirteenth century time twenty four ...
-... old man coming a little forward car carlos is the [count] 's castle nigh gus gusman the park gate is within ...
-... flourishing his sword car carlos stand aside rascal has the [count] a wife pac pacomo aside o lord the old game ...
-... me to the castle you must introduce me to the [count] gus gusman pardon me ' t is more than i ...
-... can not tell that signor but until he arrives the [count] forbids all male visitors car carlos positively gus gusman imperatively ...
-... drawbridge lowered a large door of entrance to the castle [count] almeyda enters hastily following a servant across the bridge alm ...
-... almeyda enters hastily following a servant across the bridge alm [count] almeyda where is he where is my old friend count ...
-... count almeyda where is he where is my old friend [count] arandez enters from the side ah welcome and again welcome ...
-</pre>
-<h3>KWIC — A:carlos</h3>
-<pre>
-... dramatis person philadelphia count almeyda mr robertson count arandez warren [carlos] wood pacomo jefferson gusman abercrombie pedrillo durang herald jackson eugenia ...
-... hours main text act i scene i a thick wood [carlos] carlos entering come along pacomo pacomo pacomo without here i ...
-... main text act i scene i a thick wood carlos [carlos] entering come along pacomo pacomo pacomo without here i come ...
-... the wing looking ruefully around no outlet yet sir car [carlos] none pac pacomo resting his portmanteau against a tree and ...
-... we might as well make up our minds to starve [carlos] this is a pleasant adventure pac pacomo you think so ...
-... is a pleasant adventure pac pacomo you think so car [carlos] comical and incomprehensible pac pacomo very rising and coming forward ...
-... all valets who follow lords that run after ladies car [carlos] and how will you explain our last adventure sirrah pac ...
-... your mysterious nymph had promised you should find her car [carlos] but where i arrived only to be again disappointed pac ...
-... our souls and the edification of the innocent rustics car [carlos] o poor knave methinks i still behold thee preparing for ...
-... of straw or indeed most of all like a car [carlos] o the devil take thy similitudes pac pacomo with all ...
-</pre>
-<h3>KWIC — A:pacomo</h3>
-<pre>
-... philadelphia count almeyda mr robertson count arandez warren carlos wood [pacomo] jefferson gusman abercrombie pedrillo durang herald jackson eugenia mrs entwistle ...
-... scene i a thick wood carlos carlos entering come along [pacomo] pacomo pacomo without here i come signor as fast as ...
-... i a thick wood carlos carlos entering come along pacomo [pacomo] pacomo without here i come signor as fast as the ...
-... a thick wood carlos carlos entering come along pacomo pacomo [pacomo] without here i come signor as fast as the briers ...
-... come signor as fast as the briers will permit me [pacomo] enters dragging a large portmanteau he stops at the wing ...
-... ruefully around no outlet yet sir car carlos none pac [pacomo] resting his portmanteau against a tree and taking his seat ...
-... minds to starve carlos this is a pleasant adventure pac [pacomo] you think so car carlos comical and incomprehensible pac pacomo ...
-... pacomo you think so car carlos comical and incomprehensible pac [pacomo] very rising and coming forward the history of our rambles ...
-... and how will you explain our last adventure sirrah pac [pacomo] nay sir posterity must explain for itself i shall simply ...
-... but where i arrived only to be again disappointed pac [pacomo] yes sir but where you lost no time in seeking ...
-</pre>
-<h3>KWIC — B:the</h3>
-<pre>
-... tarento raymond count of thoulouse hugh count of vermandois peter [the] hermit odo armour bearer to tancred hafez a guard brother ...
-... bearer to tancred hafez a guard brother to odo phirouz [the] traitor kilidge arslan sultan of rohum called in the christian ...
-... phirouz the traitor kilidge arslan sultan of rohum called in [the] christian army sultan soliman guards soldiers c sultana wife of ...
-... soliman guards soldiers c sultana wife of kilidge arslan ra [the] first crusade 1097 scene partly in the christian camp before ...
-... kilidge arslan ra the first crusade 1097 scene partly in [the] christian camp before antioch and partly at port st simeon ...
-... jan 1827 dear sir it is with pleasure i embrace [the] opportunity you give me of acknowledging the favour conferred by ...
-... pleasure i embrace the opportunity you give me of acknowledging [the] favour conferred by offering to my perusal your manuscript of ...
-... by offering to my perusal your manuscript of tancred or [the] siege of antioch i am no critic therefore shall not ...
-... presume to analyze its merits nor particularize its beauties admiration [the] story is classical the language elegant and its effect perfectly ...
-... merits nor particularize its beauties admiration the story is classical [the] language elegant and its effect perfectly dramatic nor is it ...
-</pre>
-<h3>KWIC — B:of</h3>
-<pre>
-... 8950 dramatis person alexius emperour [of] greece godfrey of bouillon duke of lorraine bohemond prince of ...
-... 8950 dramatis person alexius emperour of greece godfrey [of] bouillon duke of lorraine bohemond prince of tarentum tancred his ...
-... dramatis person alexius emperour of greece godfrey of bouillon duke [of] lorraine bohemond prince of tarentum tancred his cousin also a ...
-... of greece godfrey of bouillon duke of lorraine bohemond prince [of] tarentum tancred his cousin also a prince of tarento raymond ...
-... bohemond prince of tarentum tancred his cousin also a prince [of] tarento raymond count of thoulouse hugh count of vermandois peter ...
-... tancred his cousin also a prince of tarento raymond count [of] thoulouse hugh count of vermandois peter the hermit odo armour ...
-... a prince of tarento raymond count of thoulouse hugh count [of] vermandois peter the hermit odo armour bearer to tancred hafez ...
-... guard brother to odo phirouz the traitor kilidge arslan sultan [of] rohum called in the christian army sultan soliman guards soldiers ...
-... the christian army sultan soliman guards soldiers c sultana wife [of] kilidge arslan ra the first crusade 1097 scene partly in ...
-... is with pleasure i embrace the opportunity you give me [of] acknowledging the favour conferred by offering to my perusal your ...
-</pre>
-<h3>KWIC — B:odo</h3>
-<pre>
-... count of thoulouse hugh count of vermandois peter the hermit [odo] armour bearer to tancred hafez a guard brother to odo ...
-... odo armour bearer to tancred hafez a guard brother to [odo] phirouz the traitor kilidge arslan sultan of rohum called in ...
-... tancred scene v an inner court in the same castle [odo] superintending a boy who is scouring the armour of tancred ...
-... tancred rising from a side table on which are refreshments [odo] odo oh these wars these holy wars would that attends ...
-... rising from a side table on which are refreshments odo [odo] oh these wars these holy wars would that attends these ...
-... i believe ev'ry thing is ready for tomorrow 's march [odo] odo ' t is well our master will be off ...
-... believe ev'ry thing is ready for tomorrow 's march odo [odo] ' t is well our master will be off by ...
-... who says he has urgent business with our master tancred [odo] odo hem well let him enter but harkee boy i ...
-... says he has urgent business with our master tancred odo [odo] hem well let him enter but harkee boy i 'll ...
-... enter kilidge arslan in the habit of a turkish spy [odo] odo what 's your business spy spy am i admitted ...
-</pre>
-
-  <h2>Dispersion plots</h2>
-  <p class="small">Dispersion images for selected terms (plots show counts per equal-length bins).</p>
-<figure><img src="corpus_outputs/dispersion_A_1.png" alt="dispersion_A_1.png"><figcaption>dispersion_A_1.png</figcaption></figure>
-<figure><img src="corpus_outputs/dispersion_A_2.png" alt="dispersion_A_2.png"><figcaption>dispersion_A_2.png</figcaption></figure>
-<figure><img src="corpus_outputs/dispersion_B_1.png" alt="dispersion_B_1.png"><figcaption>dispersion_B_1.png</figcaption></figure>
-<figure><img src="corpus_outputs/dispersion_B_2.png" alt="dispersion_B_2.png"><figcaption>dispersion_B_2.png</figcaption></figure>
-
-  <h2>How to reproduce</h2>
-  <ol>
-    <li>Download the two text files from their local paths above and place them in the same folder.</li>
-    <li>Open the CSVs in <code>/corpus_outputs/</code> for frequency and n-gram lists.</li>
-    <li>If you want full Voyant/AntConc visuals, upload these two text files to Voyant (voyant-tools.org) and AntConc (antlab.sci.waseda.ac.jp/antconc_index.html) and follow the methods described in the assignment prompt.</li>
-  </ol>
-
-  <p class="small">Generated files are in <code>/mnt/data/corpus_outputs/</code>. Download the HTML page and the folder to publish on GitHub Pages.</p>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Corpus Analysis — Chill Version</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+  </head>
+  <body>
+    <h1>Corpus Analysis — Chill Version</h1>
+ 
+    <section>
+      <p>So, I looked at two different texts for this assignment. Let's call them Text A and Text B. Basically, I checked out how many words there are, which ones show up most, and which words are kinda unique to each text.</p>
+    </section>
+ 
+    <section>
+      <h2>Quick Stats</h2>
+      <p>Text A has about 14,610 words, and Text B has around 11,099. The number of unique words (types) is kinda similar: Text A has 2,471 and Text B has 2,421.</p>
+    </section>
+    
+    <section>
+      <h2>Top Words</h2>
+      <p>Here’s what pops up the most in each text. Nothing too crazy — just the words that show up a lot.</p>
+      <figure>
+        <img src="corpus_outputs/top_unigrams_A.png" alt="Top unigrams Text A">
+        <figcaption>Top words from Text A</figcaption>
+      </figure>
+      <figure>
+        <img src="corpus_outputs/top_unigrams_B.png" alt="Top unigrams Text B">
+        <figcaption>Top words from Text B</figcaption>
+      </figure>
+    </section>
+    
+    <section>
+      <h2>Bigrams & Trigrams</h2>
+      <p>Basically, these are word pairs (bigrams) and triples (trigrams) that show up a lot. You can check the CSVs if you wanna dive deeper.</p>
+    </section>
+    
+    <section>
+      <h2>Distinctive Words</h2>
+      <p>Some words kinda stand out in one text compared to the other. For example:</p>
+      <ul>
+        <li>Text A standout words: count, carlos, pacomo, almeyda, car, eugenia</li>
+        <li>Text B standout words: the, of, odo, tancred, and, sultan</li>
+      </ul>
+      <p>These are just the words that show up more in one text than the other.</p>
+    </section>
+    
+    <section>
+      <h2>Concordance (KWIC) Samples</h2>
+      <p>KWIC basically shows the word in context so you can see how it’s used.</p>
+      <h3>Text A: "count"</h3>
+      <pre>
+... the ground work of this little comedy dramatis person philadelphia [count] almeyda ...
+... this little comedy dramatis person philadelphia count almeyda ...
+... men at arms pages servants scene at the castle of [count] almeyda ...
+    </pre>
+      
+      <h3>Text A: "carlos"</h3>
+      <pre>
+... dramatis person philadelphia count almeyda mr robertson [carlos] wood pacomo ...
+... hours main text act i scene i a thick wood [carlos] carlos entering ...
+    </pre>
+      
+      <h3>Text B: "the"</h3>
+      <pre>
+... tarento raymond count of thoulouse hugh count of vermandois peter [the] hermit ...
+... bearer to tancred hafez a guard brother to odo phirouz [the] traitor kilidge ...
+    </pre>
+      
+      <h3>Text B: "of"</h3>
+      <pre>
+... 8950 dramatis person alexius emperour [of] greece godfrey of bouillon ...
+... 8950 dramatis person alexius emperour of greece godfrey [of] bouillon ...
+    </pre>
+    </section>
+    
+    <section>
+      <h2>Dispersion Plots</h2>
+      <p>These plots show where certain words show up throughout the texts.</p>
+      <figure><img src="corpus_outputs/dispersion_A_1.png" alt="dispersion_A_1"></figure>
+      <figure><img src="corpus_outputs/dispersion_A_2.png" alt="dispersion_A_2"></figure>
+      <figure><img src="corpus_outputs/dispersion_B_1.png" alt="dispersion_B_1"></figure>
+      <figure><img src="corpus_outputs/dispersion_B_2.png" alt="dispersion_B_2"></figure>
+    </section>
+    
+    <section>
+      <h2>How to Reproduce</h2>
+      <p>If you want to see this yourself, just put the two text files in the same folder and check out the images. You can also use tools like Voyant or AntConc to explore the texts more.</p>
+    </section>
+    
+    <footer>
+      <p>Done! That’s basically what I found in these two texts.</p>
+    </footer>
+  </body>
 </html>
